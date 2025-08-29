@@ -1,4 +1,6 @@
 "use client"
+import {CircleArrowRight} from "lucide-react" 
+
 
 const FeaturedResourcesPage = () => {
   return (
@@ -22,16 +24,49 @@ const FeaturedResourcesPage = () => {
             <p className="leading-relaxed text-base">
               A quick, research-based self-check to reflect on common ADHD symptoms in adults and children.
             </p>
-            <a
-            href="https://www.psychiatry.org/patients-families/adhd/what-is-adhd"
-            target="_blank"
-            className="mt-3 text-sky-700   inline-flex items-center cursor-pointer hover:text-sky-900">
-              Learn More
-              <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"
-                className="w-4 h-4 ml-2" viewBox="0 0 24 24">
-                <path d="M5 12h14M12 5l7 7-7 7"></path>
-              </svg>
-            </a>
+
+
+
+
+
+          {/* label or tag of organisation and article publisher */}
+<p className="inline-block mt-5 text-xs font-medium text-green-700 bg-green-100 px-1 py-1 rounded-full">
+  Source: American Psychiatric Association
+</p>
+
+<p className="inline-block mt-5 ml-2 text-xs font-medium text-green-700 bg-green-100 px-1 py-1 rounded-full">
+  ADHD
+</p>
+
+<p className="inline-block mt-5 ml-2 text-xs font-medium text-green-700 bg-green-100 px-1 py-1 rounded-full">
+  Mental Health
+</p>
+
+{/* Learn More button */}
+<a
+  href="https://www.psychiatry.org/patients-families/adhd/what-is-adhd"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="block text-sky-700  hover:text-sky-900"
+>
+  <span className="inline-flex items-center px-1 text-md">
+    Learn More
+    <svg
+      fill="none"
+      stroke="currentColor"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth="2"
+      className="w-4 h-4 ml-2"
+      viewBox="0 0 24 24"
+    >
+      <path d="M5 12h14M12 5l7 7-7 7"></path>
+    </svg>
+  </span>
+</a>
+
+           
+
           </div>
         </div>
 
@@ -44,15 +79,42 @@ const FeaturedResourcesPage = () => {
             <p className="leading-relaxed text-base">
               Explore how ADHD affects focus, memory, emotions, work, and relationships differently in adults and children.
             </p>
+
+              {/* label or tag of organisation and article publisher */}
+            <p className="inline-block mt-5 text-xs font-medium text-green-700 bg-green-100 px-1 py-1 rounded-full hover:bg-green-200 ">
+                Source: National Library of Medicine (NCFBI)
+            </p>
+
+         
+         <p className="inline-block mt-5 ml-2 text-xs font-medium text-green-700 bg-green-100 px-1 py-1 rounded-full">
+  Functioning
+</p>
+
+<p className="inline-block mt-5 ml-2 text-xs font-medium text-green-700 bg-green-100 px-1 py-1 rounded-full">
+  Daily Life
+</p>
+
+
+
             <a 
             href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11151783/#s6"
             target="_blank"
-            className="mt-3 text-sky-700  inline-flex items-center cursor-pointer hover:text-sky-900 ">
-              Learn More
-              <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"
-                className="w-4 h-4 ml-2" viewBox="0 0 24 24">
-                <path d="M5 12h14M12 5l7 7-7 7"></path>
-              </svg>
+            className="block text-sky-700   items-center cursor-pointer hover:text-sky-900 ">
+             
+                <span className="inline-flex items-center px-1 text-md">
+    Learn More
+    <svg
+      fill="none"
+      stroke="currentColor"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth="2"
+      className="w-4 h-4 ml-2"
+      viewBox="0 0 24 24"
+    >
+      <path d="M5 12h14M12 5l7 7-7 7"></path>
+    </svg>
+  </span>
             </a>
           </div>
           <div className="sm:w-32 sm:h-32 h-20 w-20 sm:ml-10 rounded-full bg-indigo-100 flex items-center justify-center overflow-hidden order-first sm:order-none">
@@ -63,6 +125,8 @@ const FeaturedResourcesPage = () => {
             />
           </div>
         </div>
+
+
 
         {/* Card 3 - Science & Research */}
         <div className="flex items-center lg:w-3/5 mx-auto sm:flex-row flex-col">
@@ -80,23 +144,49 @@ const FeaturedResourcesPage = () => {
             <p className="leading-relaxed text-base">
               Understand what brain regions are involved in ADHD, how dopamine works, and the latest research findings.
             </p>
+
+              {/* label or tag of organisation and article publisher */}
+            <p className="inline-block mt-5 text-xs font-medium text-green-700 bg-green-100 px-1 py-1 rounded-full hover:bg-green-200 ">
+                 Source: National Library of Medicine (NCFBI)
+            </p>
+
+         
+                <p className="inline-block mt-5 ml-2 text-xs font-medium text-green-700 bg-green-100 px-1 py-1 rounded-full">
+  Brain Anatomy
+</p>
+
+<p className="inline-block mt-5 ml-2 text-xs font-medium text-green-700 bg-green-100 px-1 py-1 rounded-full">
+  MRI Research
+</p>
+
+         
             <a
             href="https://pmc.ncbi.nlm.nih.gov/articles/PMC5391018/"
             target="_blank" 
-            className="mt-3 text-sky-700  inline-flex items-center cursor-pointer  hover:text-sky-900">
-              Learn More
-              <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"
-                className="w-4 h-4 ml-2" viewBox="0 0 24 24">
-                <path d="M5 12h14M12 5l7 7-7 7"></path>
-              </svg>
+            className="block  text-sky-700   items-center cursor-pointer  hover:text-sky-900">
+                 <span className="inline-flex items-center px-1 text-md">
+    Learn More
+    <svg
+      fill="none"
+      stroke="currentColor"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth="2"
+      className="w-4 h-4 ml-2"
+      viewBox="0 0 24 24"
+    >
+      <path d="M5 12h14M12 5l7 7-7 7"></path>
+    </svg>
+  </span>
             </a>
           </div>
         </div>
 
         {/* CTA Button */}
-        <button className="flex mx-auto mt-20 text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">
-          Explore More
-        </button>
+        <button className="flex items-center mx-auto mt-20 px-5 py-2 border border-gray-400 text-gray-700 rounded-lg text-sm font-medium transition-colors duration-200 hover:bg-gray-100 hover:border-gray-500 hover:text-gray-900 cursor-pointer">
+  Explore More <CircleArrowRight className="w-4 h-4 ml-2" />
+</button>
+
       </div>
     </section>
   )
