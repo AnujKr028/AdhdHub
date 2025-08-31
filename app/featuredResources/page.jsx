@@ -182,8 +182,9 @@ const FeaturedResourcesPage = () => {
           </div>
         </div>
 
-        {/* CTA Button */}
-        <button className="flex items-center mx-auto mt-20 px-5 py-2 border border-gray-400 text-gray-700 rounded-lg text-sm font-medium transition-colors duration-200 hover:bg-gray-100 hover:border-gray-500 hover:text-gray-900 cursor-pointer">
+        
+         {/* CTA Button */}
+        <button className="flex items-center mx-auto mt-20 px-5 py-2 border border-gray-400 text-gray-700 rounded-lg text-sm font-light  transition-colors duration-200 hover:bg-gray-600 hover:border-gray-500 hover:text-white cursor-pointer">
   Explore More <CircleArrowRight className="w-4 h-4 ml-2" />
 </button>
 

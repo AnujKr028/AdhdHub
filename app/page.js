@@ -4,6 +4,8 @@ import FeaturesPage from "./features/page";
 import FeaturedResourcesPage from "./featuredResources/page";
 import ExploreContentTypePage from "./exploreContent/page";
 import NewsAndUpdatesPage from "./newsAndUpdates/page";
+import FAQS from "./faqs/page";
+import Footer from "./footer/page";
 
 export default function Home() {
   return (
@@ -105,8 +107,26 @@ export default function Home() {
           <NewsAndUpdatesPage/>
           </div>
 
+
+
+           { /* faqs */} 
+              <div className="mt-10 mb-10"> 
+         <h2 className="text-3xl text-center font-semibold text-gray-700 mb-7">Faqs</h2>
+          <FAQS/>
+          </div>
+
+
+
+          {/* footer */}
+            <div className="mt-10 mb-10"> 
+         <h2 className="text-3xl text-center font-semibold text-gray-700 mb-7">Contact Us</h2>
+          <Footer/>
+          </div>
+
     </div>
 
+
+        
 
 
 
