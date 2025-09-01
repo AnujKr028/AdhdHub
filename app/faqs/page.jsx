@@ -7,10 +7,10 @@ const FAQS = () => {
     <div className="px-3 sm:px-16 py-12 font-sans text-gray-700  bg-white rounded-2xl shadow-xl   mx-auto">
       <div className="flow-root">
         <div className="-my-4 flex flex-col divide-y divide-gray-200">
-          <details className="group py-4 transition-all duration-300 [&_summary::-webkit-details-marker]:hidden" open>
+          <details className="group py-4 transition-all duration-300 [&_summary::-webkit-details-marker]:hidden" >  /* removed open from here */
             <summary className="flex items-center justify-between gap-1.5 cursor-pointer text-gray-800 font-medium  transition-colors">
               <h2 className="text-lg font-semibold">
-                Lorem ipsum dolor sit amet consectetur adipisicing?
+                I’m confused — I think I might have ADHD but I’m not sure. What should I do?
               </h2>
               <svg
                 className="size-5 shrink-0 transition-transform duration-300 group-open:-rotate-180 text-gray-500"
@@ -23,16 +23,15 @@ const FAQS = () => {
               </svg>
             </summary>
             <p className="pt-3 text-sm text-gray-600 leading-relaxed transition-all duration-700 ease-in-out group-open:max-h-[1000px] max-h-0 overflow-hidden opacity-0 group-open:opacity-100">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab hic veritatis molestias
-              culpa in, recusandae laboriosam neque aliquid libero nesciunt voluptate dicta quo
-              officiis explicabo consequuntur distinctio corporis earum similique!
+              If you suspect you may have ADHD, the first step is self-reflection and awareness. Notice whether difficulties with focus, organization, impulsivity, or restlessness consistently affect your daily life, school, or work. You can start with a self-assessment questionnaire (like the one on this site) to get an initial idea.
+However, self-tests are not diagnostic. To get clarity, consider reaching out to a mental health professional (psychiatrist, psychologist, or a trained therapist). They can conduct a full evaluation, review your history, and determine whether your symptoms align with ADHD or another condition.
             </p>
           </details>
 
           <details className="group py-4 transition-all duration-300 [&_summary::-webkit-details-marker]:hidden">
             <summary className="flex items-center justify-between gap-1.5 cursor-pointer text-gray-800 font-medium  transition-colors">
               <h2 className="text-lg font-semibold">
-                Lorem ipsum dolor sit amet consectetur adipisicing?
+                When should I go for a diagnosis to a psychiatrist?
               </h2>
               <svg
                 className="size-5 shrink-0 transition-transform duration-300 group-open:-rotate-180 text-gray-500"
@@ -45,16 +44,24 @@ const FAQS = () => {
               </svg>
             </summary>
             <p className="pt-3 text-sm text-gray-600 leading-relaxed transition-all duration-700 ease-in-out group-open:max-h-[1000px] max-h-0 overflow-hidden opacity-0 group-open:opacity-100">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab hic veritatis molestias
-              culpa in, recusandae laboriosam neque aliquid libero nesciunt voluptate dicta quo
-              officiis explicabo consequuntur distinctio corporis earum similique!
+              You should seek a professional evaluation if your symptoms are persistent, cause significant distress, or interfere with daily functioning. Signs that it may be time to see a psychiatrist or psychologist include:
+
+Ongoing struggles with focus, organization, or forgetfulness
+
+Restlessness, impulsive decisions, or emotional outbursts
+
+Difficulty completing tasks at school, work, or home
+
+Feeling overwhelmed despite trying to manage with lifestyle changes
+
+Early diagnosis is important because ADHD symptoms can overlap with other conditions like anxiety or depression. A psychiatrist will help clarify the cause and suggest the right treatment plan.
             </p>
           </details>
 
           <details className="group py-4 transition-all duration-300 [&_summary::-webkit-details-marker]:hidden">
             <summary className="flex items-center justify-between gap-1.5 cursor-pointer text-gray-800 font-medium  transition-colors">
               <h2 className="text-lg font-semibold">
-                Lorem ipsum dolor sit amet consectetur adipisicing?
+                Do medications help? How much time will it take to fix my problem?
               </h2>
               <svg
                 className="size-5 shrink-0 transition-transform duration-300 group-open:-rotate-180 text-gray-500"
@@ -67,9 +74,8 @@ const FAQS = () => {
               </svg>
             </summary>
             <p className="pt-3 text-sm text-gray-600 leading-relaxed transition-all duration-700 ease-in-out group-open:max-h-[1000px] max-h-0 overflow-hidden opacity-0 group-open:opacity-100">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab hic veritatis molestias
-              culpa in, recusandae laboriosam neque aliquid libero nesciunt voluptate dicta quo
-              officiis explicabo consequuntur distinctio corporis earum similique!
+              Medications for ADHD, such as stimulants (e.g., methylphenidate, amphetamines) or non-stimulants (e.g., atomoxetine, guanfacine), are proven to be effective for many people. They don’t “cure” ADHD, but they can significantly reduce symptoms like inattention, impulsivity, and hyperactivity.
+Effects can often be noticed within hours to days after starting treatment, though finding the right medication and dosage may take a few weeks under a doctor’s supervision. ADHD is not something that can be “fixed” permanently, but with the right combination of medication, therapy, and strategies, most people manage it successfully and lead fulfilling lives.
             </p>
           </details>
 
@@ -78,7 +84,7 @@ const FAQS = () => {
              <details className="group py-4 transition-all duration-300 [&_summary::-webkit-details-marker]:hidden">
             <summary className="flex items-center justify-between gap-1.5 cursor-pointer text-gray-800 font-medium  transition-colors">
               <h2 className="text-lg font-semibold">
-                Lorem ipsum dolor sit amet consectetur adipisicing?
+                I feel mental fog, breakdowns, burden, and concentration lapses all day. Are these signs of ADHD?
               </h2>
               <svg
                 className="size-5 shrink-0 transition-transform duration-300 group-open:-rotate-180 text-gray-500"
@@ -91,9 +97,8 @@ const FAQS = () => {
               </svg>
             </summary>
             <p className="pt-3 text-sm text-gray-600 leading-relaxed transition-all duration-700 ease-in-out group-open:max-h-[1000px] max-h-0 overflow-hidden opacity-0 group-open:opacity-100">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab hic veritatis molestias
-              culpa in, recusandae laboriosam neque aliquid libero nesciunt voluptate dicta quo
-              officiis explicabo consequuntur distinctio corporis earum similique!
+             Mental fog, emotional overwhelm, and concentration problems can be symptoms of ADHD — but they are not exclusive to it. Conditions such as anxiety, depression, stress, poor sleep, or medical issues (like thyroid imbalance) can also cause similar experiences.
+If these struggles are long-term, daily, and significantly affecting your quality of life, it’s worth consulting a psychiatrist or psychologist. They can evaluate whether ADHD, another mental health condition, or a combination of factors is contributing. A professional diagnosis ensures you get the right support — whether it’s ADHD treatment, therapy, lifestyle changes, or addressing other underlying causes.
             </p>
           </details>
 
@@ -109,7 +114,7 @@ const FAQS = () => {
 
          {/* CTA Button */}
         <button className="flex items-center mx-auto sm:mt-12 md:mt-10 lg:mt-10 px-5 py-2 border border-gray-400 text-gray-700 rounded-lg text-sm font-light transition-colors duration-200 hover:bg-gray-600 hover:border-gray-500 hover:text-white cursor-pointer">
-  Explore More <CircleArrowRight className="w-4 h-4 ml-2" />
+  Read More Faqs <CircleArrowRight className="w-4 h-4 ml-2" />
 </button>
 
       </div>
