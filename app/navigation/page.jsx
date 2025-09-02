@@ -2,6 +2,28 @@
 import  {useState} from "react"; 
 import { Menu, X } from "lucide-react";
 
+
+
+
+
+
+
+import { Playfair_Display , Roboto } from "next/font/google";
+
+const playfair = Playfair_Display({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+});
+
+const roboto = Roboto({
+  subsets: ["latin"],
+  weight: ["400", "500", "700"],
+});
+
+
+
+
+
 const Navigation = () => {
 
 
@@ -20,20 +42,20 @@ const Navigation = () => {
       </div>
 
       {/* right: nav links  - hide on small screens*/  }
-      <div className="hidden md:flex space-x-6">
+      <div className={`${roboto.className} hidden md:flex space-x-6`}>
         <a href="#" className="text-gray-700 hover:text-gray-900">
           Home
         </a>
-        <a href="#" className="text-gray-700 hover:text-gray-900">
-          Research
-        </a>
-        <a href="#" className="text-gray-700 hover:text-gray-900">
+        <a href="/FeaturesLinkPages/symtomps" className="text-gray-700 hover:text-gray-900">
           Symptoms
         </a>
-        <a href="#" className="text-gray-700 hover:text-gray-900">
+        <a href="/exploreContent" className="text-gray-700 hover:text-gray-900">
           Resources
         </a>
-        <a href="#" className="text-gray-700 hover:text-gray-900">
+        <a href="/footer" className="text-gray-700 hover:text-gray-900">
+          Contact us
+        </a>
+        <a href="/footer" className="text-gray-700 hover:text-gray-900">
           About
         </a>
       </div>
@@ -53,21 +75,21 @@ const Navigation = () => {
  {/* mobile menu dropdown */}
       {isMenuOpen && (
         <div className="absolute top-16 left-0 w-full bg-white shadow-md md:hidden flex flex-col items-center space-y-4 py-6 z-50">
-          <a href="#" className="text-gray-700 hover:text-gray-900">
-            Home
-          </a>
-          <a href="#" className="text-gray-700 hover:text-gray-900">
-            Research
-          </a>
-          <a href="#" className="text-gray-700 hover:text-gray-900">
-            Symptoms
-          </a>
-          <a href="#" className="text-gray-700 hover:text-gray-900">
-            Resources
-          </a>
-          <a href="#" className="text-gray-700 hover:text-gray-900">
-            About
-          </a>
+         <a href="#" className="text-gray-700 hover:text-gray-900">
+          Home
+        </a>
+        <a href="/FeaturesLinkPages/symtomps" className="text-gray-700 hover:text-gray-900">
+          Symptoms
+        </a>
+        <a href="/exploreContent" className="text-gray-700 hover:text-gray-900">
+          Resources
+        </a>
+        <a href="/footer" className="text-gray-700 hover:text-gray-900">
+          Contact us
+        </a>
+        <a href="/footer" className="text-gray-700 hover:text-gray-900">
+          About
+        </a>
         </div>
       )}
 

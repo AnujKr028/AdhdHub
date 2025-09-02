@@ -7,14 +7,44 @@ import NewsAndUpdatesPage from "./newsAndUpdates/page";
 import FAQS from "./faqs/page";
 import Footer from "./footer/page";
 import Navigation from "./navigation/page";
+import { BookCheck , LibraryBig} from "lucide-react";
+import { Playfair_Display , Inter  } from "next/font/google";
 
-import { Playfair_Display } from "next/font/google";
+import { Source_Sans_3 } from '@next/font/google';
 
+import Link from "next/link";
+
+// import test page 
+import TakeTestPage from "./Take-test/page";
 
 const playfair = Playfair_Display({
   subsets: ["latin"],
   weight: ["400", "500", "600", "700"],
 });
+
+
+const sourceSans3 = Source_Sans_3({
+  subsets: ['latin'], // Specify the necessary subsets
+  display: 'swap',   // Control font loading behavior
+  weight: ['400', '700'], // Specify desired weights if not using variable font
+  // variable: '--font-source-sans-3', // Optional: for CSS variables
+});
+
+import { Merriweather, Lato } from "next/font/google";
+
+const merriweather = Merriweather({ subsets: ["latin"], weight: ["400","700"] });
+const lato = Lato({ subsets: ["latin"], weight: ["400","700"] });
+
+
+
+
+import { IBM_Plex_Serif, IBM_Plex_Sans } from "next/font/google";
+
+const ibmSerif = IBM_Plex_Serif({ subsets: ["latin"], weight: ["400","600"] });
+const ibmSans = IBM_Plex_Sans({ subsets: ["latin"], weight: ["400","500"] });
+
+
+
 
 export default function Home() {
   return (
@@ -45,21 +75,33 @@ export default function Home() {
             – Your Trusted ADHD Resource and Research Hub
           </h2>
 
-          <p className="text-gray-600 mb-6">
+          <p className={`${ ibmSans.className} text-gray-800 mb-6  `} >
             Discover curated research, expert articles, podcasts, and guides
             from trusted sources to help you understand and manage ADHD. All in
             one place.
           </p>
 
-          {/* action buttons */}
-          <div className="flex gap-4">
-            <button className="px-6 py-2 rounded-full bg-gray-800 text-white hover:bg-gray-900 transition">
-              Take Test
-            </button>
-            <button className="px-6 py-2 rounded-full border border-gray-800 text-gray-800 hover:bg-gray-100 transition">
-              Explore Resources
-            </button>
-          </div>
+        
+<div className="flex gap-4">
+  {/* Primary button */}
+  <Link
+  href="/Take-test"
+    className={`${ibmSans.className} flex items-center gap-2 px-6 py-2 rounded-full bg-gray-800 text-white font-medium shadow-md hover:shadow-lg hover:bg-gray-900 active:scale-95 transition cursor-pointer`}
+  >
+    <BookCheck className="w-5 h-5" />
+    Take Test
+  </Link>
+
+  {/* Secondary button */}
+  <Link
+  href={"/exploreContent"}
+    className={`${ibmSans.className} flex items-center gap-2 px-6 py-2 rounded-full border border-white text-gray-800 bg-white font-medium shadow-sm hover:bg-gray-50 hover:shadow-md active:scale-95 transition cursor-pointer`}
+  >
+    <LibraryBig className="w-5 h-5" />
+    Explore Resources
+  </Link>
+</div>
+
         </div>
       </main>
 
