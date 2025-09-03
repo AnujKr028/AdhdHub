@@ -94,7 +94,7 @@ export default function Home() {
 
   {/* Secondary button */}
   <Link
-  href={"/exploreContent"}
+  href={"#exploreContent"}
     className={`${ibmSans.className} flex items-center gap-2 px-6 py-2 rounded-full border border-white text-gray-800 bg-white font-medium shadow-sm hover:bg-gray-50 hover:shadow-md active:scale-95 transition cursor-pointer`}
   >
     <LibraryBig className="w-5 h-5" />

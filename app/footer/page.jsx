@@ -274,11 +274,11 @@ const handleSubscribe = () => {
             </div>
 
                   {/* success and error message show */} 
-{message && (
+{/* {message && (
   <div className="mb-4 transition-all duration-500 ease-in-out transform animate-fade-in-down">
     <Alert type={message.type} message={message.text} />
   </div>
-)}
+)} */}
 
           </form>
         </div>
