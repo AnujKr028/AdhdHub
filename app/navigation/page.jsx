@@ -8,21 +8,13 @@ import { Menu, X } from "lucide-react";
 
 
 
-import { Playfair_Display , Roboto } from "next/font/google";
+import {Lato , IBM_Plex_Sans , Roboto_Slab} from  "next/font/google" ;
 
-const playfair = Playfair_Display({
-  subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
-});
+const lato = Lato({ subsets: ["latin"], weight: ["400","700"] });
+const ibmSans = IBM_Plex_Sans({ subsets: ["latin"], weight: ["400","500"] });
+ const robotoSlab = Roboto_Slab({ subsets: ["latin"], weight: ["400","700"] });
 
-const roboto = Roboto({
-  subsets: ["latin"],
-  weight: ["400", "500", "700"],
-});
-
-
-
-
+ 
 
 const Navigation = () => {
 
@@ -42,23 +34,24 @@ const Navigation = () => {
       </div>
 
       {/* right: nav links  - hide on small screens*/  }
-      <div className={`${roboto.className} hidden md:flex space-x-6`}>
-        <a href="#" className="text-gray-700 hover:text-gray-900">
-          Home
-        </a>
-        <a href="/FeaturesLinkPages/symtomps" className="text-gray-700 hover:text-gray-900">
-          Symptoms
-        </a>
-        <a href="/exploreContent" className="text-gray-700 hover:text-gray-900">
-          Resources
-        </a>
-        <a href="/footer" className="text-gray-700 hover:text-gray-900">
-          Contact us
-        </a>
-        <a href="/footer" className="text-gray-700 hover:text-gray-900">
-          About
-        </a>
-      </div>
+      <div className={`${robotoSlab.className} hidden md:flex space-x-6`}>
+  <a href="#" className="relative text-gray-700 hover:text-gray-900 after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-[2px] after:bg-gray-900 after:transition-all after:duration-300 hover:after:w-full">
+    Home
+  </a>
+  <a href="/FeaturesLinkPages/symtomps" className="relative text-gray-700 hover:text-gray-900 after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-[2px] after:bg-gray-900 after:transition-all after:duration-300 hover:after:w-full">
+    Symptoms
+  </a>
+  <a href="#exploreContent" className="relative text-gray-700 hover:text-gray-900 after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-[2px] after:bg-gray-900 after:transition-all after:duration-300 hover:after:w-full">
+    Resources
+  </a>
+  <a href="#footer" className="relative text-gray-700 hover:text-gray-900 after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-[2px] after:bg-gray-900 after:transition-all after:duration-300 hover:after:w-full">
+    Contact us
+  </a>
+  <a href="#footer" className="relative text-gray-700 hover:text-gray-900 after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-[2px] after:bg-gray-900 after:transition-all after:duration-300 hover:after:w-full">
+    About
+  </a>
+</div>
+
 
 
 
@@ -74,7 +67,7 @@ const Navigation = () => {
 
  {/* mobile menu dropdown */}
       {isMenuOpen && (
-        <div className="absolute top-16 left-0 w-full bg-white shadow-md md:hidden flex flex-col items-center space-y-4 py-6 z-50">
+        <div className= {` ${robotoSlab.className} absolute top-16 left-0 w-full bg-white shadow-md md:hidden flex flex-col items-center space-y-4 py-6 z-50`}>
          <a href="#" className="text-gray-700 hover:text-gray-900">
           Home
         </a>

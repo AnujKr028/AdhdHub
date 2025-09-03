@@ -110,23 +110,23 @@ export default function Home() {
 
       {/* featured resources */}
       <div className="mt-5 mb-5">
-        <h2 className="text-3xl text-center font-semibold text-gray-700">
+        <h2 className={` ${merriweather.className} text-3xl text-center font-light text-gray-700`}>
           Featured Resources
         </h2>
         <FeaturedResourcesPage />
       </div>
 
       {/* explore by content */}
-      <div className="mt-2 mb-10">
-        <h2 className="text-3xl text-center font-semibold text-gray-700 mb-7">
+      <div id="exploreContent" className="mt-2 mb-10">
+        <h2 className={` ${merriweather.className} text-3xl text-center font-light text-gray-700 mb-7`}>
           Explore by Content Type
         </h2>
         <ExploreContentTypePage />
       </div>
 
       {/* updates */}
-      <div className="mt-10 mb-10">
-        <h2 className="text-3xl text-center font-semibold text-gray-700 mb-7">
+      <div id="news" className="mt-10 mb-10">
+        <h2 className={` ${merriweather.className} text-3xl text-center font-light text-gray-700 mb-7`}>
           Latest Update and News
         </h2>
         <NewsAndUpdatesPage />
@@ -134,15 +134,15 @@ export default function Home() {
 
       {/* faqs */}
       <div className="mt-10 mb-10">
-        <h2 className="text-3xl text-center font-semibold text-gray-700 mb-7">
+        <h2 className={` ${merriweather.className} text-3xl text-center font-light text-gray-700 mb-7`}>
           FAQs
         </h2>
         <FAQS />
       </div>
 
       {/* footer */}
-      <div className="mt-10 mb-10">
-        <h2 className="text-3xl text-center font-semibold text-gray-700 mb-7">
+      <div id ="footer" className="mt-10 mb-10">
+        <h2 className= {` ${merriweather.className} text-3xl text-center font-light text-gray-700 mb-7`}>
           Contact Us
         </h2>
         <Footer />

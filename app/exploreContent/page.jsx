@@ -1,6 +1,27 @@
 "use client";
 
-import { Microscope , Newspaper , Podcast , BookMarked } from "lucide-react";  // ✅ Correct import
+import { Microscope , Newspaper , Podcast , BookMarked } from "lucide-react";   
+
+import { Playfair_Display , IBM_Plex_Sans , Lato } from "next/font/google";
+
+import { Roboto_Slab } from "next/font/google";
+
+
+// fonnts
+
+const playfair = Playfair_Display({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+});
+
+
+ const ibmSans = IBM_Plex_Sans({ subsets: ["latin"], weight: ["400","500"] });
+ 
+ const lato = Lato({ subsets: ["latin"], weight: ["400","700"] });
+
+ const robotoSlab = Roboto_Slab({ subsets: ["latin"], weight: ["400","700"] });
+
+ 
 
 const ExploreContentTypePage = () => {
   const cards = [
@@ -47,22 +68,22 @@ const ExploreContentTypePage = () => {
             alt="Card Thumbnail"
           />
           <div className="p-4">
-            {/* ✅ Icons will now show */}
+            {/*  Icons will now show */}
             {card.icons}
 
-            <p className="inline-block mb-2 text-xs font-medium text-indigo-700 bg-indigo-100 px-2 py-1 rounded-full">
+            <p className={` ${robotoSlab.className} inline-block mb-2 text-xs font-medium text-indigo-700 bg-indigo-100 px-2 py-1 rounded-full`}>
               {card.tags}
             </p>
 
-            <h5 className="mb-2 text-lg font-semibold text-gray-900">
+            <h5 className={`${playfair.className} mb-2 text-lg font-semibold text-gray-800`}>
               {card.title}
             </h5>
 
-            <p className="mb-3 text-sm text-gray-600">{card.description}</p>
+            <p className={`${ibmSans.className} mb-3 text-sm text-gray-600`}>{card.description}</p>
 
             <a
               href="#"
-              className="inline-flex items-center text-sm font-medium text-indigo-600 hover:text-indigo-800"
+              className= {` ${lato.className} inline-flex items-center text-sm font-medium text-sky-600 hover:text-indigo-800`}
             >
               Explore here →
             </a>

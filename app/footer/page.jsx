@@ -1,8 +1,20 @@
 "use client" 
 import { useState } from "react"
 import { useEffect } from "react";
-
 import Alert from "../../components/alerts/page.jsx"
+import next from "next";
+
+import {Lato , IBM_Plex_Sans , Roboto_Slab} from  "next/font/google" ;
+
+const lato = Lato({ subsets: ["latin"], weight: ["400","700"] });
+const ibmSans = IBM_Plex_Sans({ subsets: ["latin"], weight: ["400","500"] });
+ const robotoSlab = Roboto_Slab({ subsets: ["latin"], weight: ["400","700"] });
+
+ 
+
+
+
+
 const Footer = () => { 
 
 
@@ -111,7 +123,7 @@ const handleSubscribe = () => {
 
       </div>
 
-      <p className="mt-4 max-w-md text-center leading-relaxed text-gray-500 sm:text-left lg:mt-0">
+      <p className={`${ibmSans.className} mt-4 max-w-md text-center leading-relaxed text-gray-500 sm:text-left lg:mt-0`}>
        Your trusted source for evidence-based ADHD information, research, and resources. Helping individuals, families, and professionals understand ADHD better.
       </p>
     </div>
@@ -120,80 +132,79 @@ const handleSubscribe = () => {
       className="mt-16 grid grid-cols-1 gap-8 border-t border-gray-100 pt-16 md:grid-cols-4 lg:grid-cols-6"
     >
       <div className="text-center sm:text-left">
-        <p className="text-lg font-medium text-gray-900">About Us</p>
+        <p className={`${robotoSlab.className} text-lg font-medium text-gray-900`}>About Us</p>
 
         <ul className="mt-8 space-y-4 text-sm">
           <li>
-            <a className="text-gray-700 transition hover:text-gray-700/75" href="#">
-              Company History
+            <a className={` ${lato.className} text-gray-700 transition hover:text-gray-700/75" href="#"`}>Company History
             </a>
           </li>
 
           <li>
-            <a className="text-gray-700 transition hover:text-gray-700/75" href="#"> Meet the Team </a>
+            <a className={` ${lato.className} text-gray-700 transition hover:text-gray-700/75" href="#"`}> Meet the Team </a>
           </li>
 
           {/* <li>
-            <a className="text-gray-700 transition hover:text-gray-700/75" href="#">
+            <a className={` ${lato.className} text-gray-700 transition hover:text-gray-700/75" href="#"`}>
               Employee Handbook
             </a> 
           </li>
           */}
 
           {/* <li>
-            <a className="text-gray-700 transition hover:text-gray-700/75" href="#"> Careers </a>
+            <a className={` ${lato.className} text-gray-700 transition hover:text-gray-700/75" href="#"`}> Careers </a>
           </li> */}
         </ul>
       </div>
 
       <div className="text-center sm:text-left">
-        <p className="text-lg font-medium text-gray-900">Our Services</p>
+        <p className={`${robotoSlab.className} text-lg font-medium text-gray-900`}>Our Services</p>
 
         <ul className="mt-8 space-y-4 text-sm">
           <li>
-            <a className="text-gray-700 transition hover:text-gray-700/75" href="#">
+            <a className={` ${lato.className} text-gray-700 transition hover:text-gray-700/75" href="#"`}>
               Adhd Consulting
             </a>
           </li>
 
           <li>
-            <a className="text-gray-700 transition hover:text-gray-700/75" href="#"> Self-Help Tools </a>
+            <a className={` ${lato.className} text-gray-700 transition hover:text-gray-700/75" href="#"`}> Self-Help Tools </a>
           </li>
 
           <li>
-            <a className="text-gray-700 transition hover:text-gray-700/75" href="#"> Community Support </a>
+            <a className={` ${lato.className} text-gray-700 transition hover:text-gray-700/75" href="#"`}> Community Support </a>
           </li>
 
           <li>
-            <a className="text-gray-700 transition hover:text-gray-700/75" href="#">  Workshops </a>
+            <a className={` ${lato.className} text-gray-700 transition hover:text-gray-700/75" href="#"`}>  Workshops </a>
           </li>
         </ul>
       </div>
 
       <div className="text-center sm:text-left">
-        <p className="text-lg font-medium text-gray-900">Resources</p>
+        <p className={`${robotoSlab.className} text-lg font-medium text-gray-900`}>Resources</p>
 
         <ul className="mt-8 space-y-4 text-sm">
           <li>
-            <a className="text-gray-700 transition hover:text-gray-700/75" href="#"> Online Guides </a>
+            <a className={` ${lato.className} text-gray-700 transition hover:text-gray-700/75" href="#"`}> Online Guides </a>
           </li>
 
           <li>
-            <a className="text-gray-700 transition hover:text-gray-700/75" href="#">
+            <a className={` ${lato.className} text-gray-700 transition hover:text-gray-700/75" href="#"`}>
               Conference Notes
             </a>
           </li>
 
           <li>
-            <a className="text-gray-700 transition hover:text-gray-700/75" href="#"> Forum </a>
+            <a className={` ${lato.className} text-gray-700 transition hover:text-gray-700/75" href="#"`}> Forum </a>
           </li>
 
           <li>
-            <a className="text-gray-700 transition hover:text-gray-700/75" href="#"> Downloads </a>
+            <a className={` ${lato.className} text-gray-700 transition hover:text-gray-700/75" href="#"`}> Downloads </a>
           </li>
 
           <li>
-            <a className="text-gray-700 transition hover:text-gray-700/75" href="#">
+            <a className={` ${lato.className} text-gray-700 transition hover:text-gray-700/75" href="#"`}>
               Upcoming Events
             </a>
           </li>
@@ -201,15 +212,15 @@ const handleSubscribe = () => {
       </div>
 
       <div className="text-center sm:text-left">
-        <p className="text-lg font-medium text-gray-900">Helpful Links</p>
+        <p className={`${robotoSlab.className} text-lg font-medium text-gray-900`}>Helpful Links</p>
 
         <ul className="mt-8 space-y-4 text-sm">
           <li>
-            <a className="text-gray-700 transition hover:text-gray-700/75" href="#"> FAQs </a>
+            <a className={` ${lato.className} text-gray-700 transition hover:text-gray-700/75" href="#"`}> FAQs </a>
           </li>
 
           <li>
-            <a className="text-gray-700 transition hover:text-gray-700/75" href="#"> Support </a>
+            <a className={` ${lato.className} text-gray-700 transition hover:text-gray-700/75" href="#"`}> Support </a>
           </li>
 
           <li>
@@ -231,10 +242,10 @@ const handleSubscribe = () => {
       </div>
 
       <div className="text-center sm:text-left md:col-span-4 lg:col-span-2">
-        <p className="text-lg font-medium text-gray-900">Stay in Touch</p>
+        <p className={`${robotoSlab.className} text-lg font-medium text-gray-900`}>Stay in Touch</p>
 
         <div className="mx-auto mt-8 max-w-md sm:ms-0">
-          <p className="text-center leading-relaxed text-gray-500 ltr:sm:text-left rtl:sm:text-right">
+          <p className= {`${ibmSans.className} text-center leading-relaxed text-gray-500 ltr:sm:text-left rtl:sm:text-right`}>
            We’re here to support your journey. Subscribe to receive helpful articles, tools, and community updates.
           </p>
 
@@ -245,7 +256,7 @@ const handleSubscribe = () => {
               <label htmlFor="email" className="sr-only">Email</label>
 
               <input
-                className="w-full rounded-full border border-gray-500 px-6 py-3 shadow-xs"
+                className="w-full rounded-full border border-gray-500 px-6 py-3 shadow-xs placeholder:font-mono placeholder:text-[14px]"
                 type="email"
                 value={email}
                 placeholder="Enter your email"
@@ -253,7 +264,7 @@ const handleSubscribe = () => {
               />
 
               <button
-                className="block rounded-full bg-indigo-500 px-8 py-3 font-medium text-white transition hover:bg-indigo-600"
+                className="block rounded-full bg-indigo-500 px-8 py-3 font-medium text-white transition hover:bg-indigo-600 font-mono"
                 type="submit"
                 onClick={handleSubscribe}
                 onSubmit={(e)=>{e.preventDefault()}}
@@ -279,7 +290,7 @@ const handleSubscribe = () => {
   
 
     <div className="mt-16 border-t border-gray-100 pt-6 sm:flex sm:items-center sm:justify-between">
-      <p className="text-center text-sm text-gray-500 sm:text-left">
+      <p className= {`${lato.className} text-center text-sm text-gray-500 sm:text-left`}>
         Copyright &copy; 2022. All rights reserved.
       </p>
 
